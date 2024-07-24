@@ -1,0 +1,201 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .headingContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    z-index: 1;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+  }
+  
+  .headerOutside{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+  }
+  
+  .headerInside{
+    min-width: 5rem;
+    position:absolute;
+    right: 0;
+    display: flex;
+    gap: 12rem;
+    margin-right: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .box{
+    margin-bottom: 2rem;
+  }
+  
+  .withHeading{
+    display: grid;
+    grid-template-columns: repeat(2, 25rem);
+    gap: 2.5rem;
+  }
+  
+  .statusText{
+    size: 2rem;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 100%;
+  }
+  
+  .container {
+    margin-top: 1px;
+    padding: 20px;
+  }
+  
+  .disabledInput {
+    background-color: white;
+  }
+  
+  .saveButton {
+    background-color: #4caf50; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    text-align: center; 
+    display: inline-block; 
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .saveButton:hover {
+    background-color: #45a049; 
+  }
+  
+  .saveButton:disabled {
+    background-color: #9e9e9e; 
+    cursor: not-allowed; 
+  }
+  
+  .editButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .editButton:disabled {
+    background-color: #9e9e9e; 
+    cursor: not-allowed; 
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .formContent {
+    display: grid;
+    grid-template-columns: repeat(3, 25rem);
+    gap: 2.5rem; 
+  }
+  
+  .formBigContent {
+    width: 50rem; 
+  }
+  
+  .formMidContent {
+    width: 20rem; 
+  }
+  
+  .formItem {
+    width: 15rem;
+    flex: 1 1;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .table thead th {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .table tbody td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .table tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .accordion {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .accordionItem {
+    cursor: pointer;
+    background-color: rgb(195, 222, 242);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+  &:hover {
+    background-color: none;
+  }
+  }
+  
+  .modal{
+    margin-top: 10px;
+    margin-left: 8rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modalButton{
+    padding: 5px;
+    background-color: #e0e0e0;
+  }
+  
+  @media (max-width: 768px) {
+    .accordion {
+      padding: 5px;
+    }
+  
+    .accordionItem {
+      font-size: 0.9rem;
+    }
+  
+    .formContent {
+      display: grid;
+      grid-template-columns: repeat(1, 15rem);
+      gap: 10px; 
+    }
+  }
